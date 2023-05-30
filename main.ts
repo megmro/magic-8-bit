@@ -3,6 +3,9 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("ASK QUESTION.SHAKE.")
     pins.setEvents(DigitalPin.P1, PinEventType.Pulse)
 })
+input.onButtonPressed(Button.AB, function () {
+    basic.showString("MAGIC 8-BIT")
+})
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     music.startMelody(music.builtInMelody(Melodies.Entertainer), MelodyOptions.Once)
@@ -48,4 +51,3 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 let number = 0
 basic.showString("MAGIC 8-BIT")
-pins.digitalWritePin(DigitalPin.P1, 1)
